@@ -17,11 +17,12 @@ class Program
         job2._endYear = 2022;
 
         Resume myResume = new Resume();
-        myResume._name = "Spencer Barbre";
+        myResume._name = "Spencer Barbre";        
         myResume._jobs.Add(job1);
         myResume._jobs.Add(job2);
 
         myResume.Display();
+        
 
     
     }
