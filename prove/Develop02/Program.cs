@@ -4,14 +4,17 @@ class Program
 {
     static void Main(string[] args)
     {
+        List<string> userJournal = new List<string>();
+        UserPromptsForJournal userPrompt = new UserPromptsForJournal();
         int userDecision = -1;
+
+
         while(userDecision != 5)
         {
-           DisplayWelcomeMessage();
-           //string prompt = GeneratePrompt();
-           userDecision = UserChoice();
-           List<string> userJournal = new List<string>();
-           
+            DisplayWelcomeMessage();
+            //string prompt = GeneratePrompt();
+            userDecision = UserChoice();
+            
 
             if (userDecision == 1)
             {
@@ -22,18 +25,14 @@ class Program
                 string dateText = theCurrentTime.ToShortDateString();  
 
                 //Gets Prompt 
-                // string prompt = GeneratePrompt();
-                // Console.WriteLine($"{prompt}:");
-                UserPromptsForJournal userPrompt = new UserPromptsForJournal();
-                
-                //string prompt = userPrompt;
-                userPrompt.Display();
-                Console.WriteLine(": "); 
+                string prompt = userPrompt.getPrompt();
+                Console.WriteLine(prompt);
+                Console.Write(": "); 
                 string userInput = Console.ReadLine(); 
                
                 Entry entry = new Entry();
                 entry._date = dateText;
-                //entry._prompt = prompt;
+                entry._prompt = prompt;
                 entry._input = userInput;
                 
                 Journal journal = new Journal();

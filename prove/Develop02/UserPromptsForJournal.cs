@@ -61,11 +61,17 @@ public class UserPromptsForJournal
         prompts.Add("Have you traveled to any place outside of your home country? If so, explain the reasons for your trip(s) and what memorable things happened on some of those trips.");
 
     }
-    public void Display()
+    public string getPrompt()
     {
+        // foreach(string prompt in prompts)
+        // {
+        //     return prompt;
+        // }
+
      for(int i = 0; i < prompts.Count; i++)
         {
-           Console.WriteLine($"{prompts[i]}");
+            Console.WriteLine(prompts[i]);
+            
         }
     }   
     
