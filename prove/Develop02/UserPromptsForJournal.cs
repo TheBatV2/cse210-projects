@@ -1,13 +1,11 @@
 using System;
 
-class UserPromptsForJournal
+public class UserPromptsForJournal
 {
-    static void Main(string[] args)
-    {
-        
-        Random randomGenerator = new Random();
-        int number = randomGenerator.Next(1,52);
-        List<string> prompts = new List<string>();
+   
+    private List<string> prompts = new List<string>();
+    public UserPromptsForJournal()
+    {     
 
         prompts.Add("What is your full name? Explain why your parents gave you that name.");
         prompts.Add("When and where were you born? Describe your home, your neighborhood, and the town you grew up in.");
@@ -32,8 +30,8 @@ class UserPromptsForJournal
         prompts.Add("What were some of the challenges you have had to deal with in your life?");
         prompts.Add("What medical issues have you had to deal with throughout your life?");
         prompts.Add("Was religion an important for you and your family? If so, explain what religion your family practiced and what it meant to you. Explain if it is or is not an important part of your life today.");
-        prompts.Add("What foods do you like and dislike? Describe any food allergies you or other family members had.")
-        prompts.Add("Were there two or three food dishes your mother or father made that were especially memorable?")
+        prompts.Add("What foods do you like and dislike? Describe any food allergies you or other family members had.");
+        prompts.Add("Were there two or three food dishes your mother or father made that were especially memorable?");
         prompts.Add("How did you meet your spouse?");
         prompts.Add("What was your courtship like? Describe your marriage day.");
         prompts.Add("Share some stories about your spouse.");
@@ -61,6 +59,14 @@ class UserPromptsForJournal
         prompts.Add("When all is said and done, what do you want to be remembered for? Explain what you are doing now to create a legacy worthy of remembering.");
         prompts.Add("If you were to leave 5 different bits of advice for your future posterity, what would they be?");
         prompts.Add("Have you traveled to any place outside of your home country? If so, explain the reasons for your trip(s) and what memorable things happened on some of those trips.");
-        Console.WriteLine($"{prompts}");
+
     }
+    public void Display()
+    {
+     for(int i = 0; i < prompts.Count; i++)
+        {
+           Console.WriteLine($"{prompts[i]}");
+        }
+    }   
+    
 }    
