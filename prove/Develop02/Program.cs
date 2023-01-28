@@ -4,15 +4,16 @@ class Program
 {
     static void Main(string[] args)
     {
+        int userDecision = -1;
+        DisplayWelcomeMessage();
+        //string prompt = GeneratePrompt();
         List<string> userJournal = new List<string>();
         UserPromptsForJournal userPrompt = new UserPromptsForJournal();
-        int userDecision = -1;
+        Journal journal = new Journal();
 
 
         while(userDecision != 5)
         {
-            DisplayWelcomeMessage();
-            //string prompt = GeneratePrompt();
             userDecision = UserChoice();
             
 
@@ -27,30 +28,29 @@ class Program
                 //Gets Prompt 
                 string prompt = userPrompt.getPrompt();
                 Console.WriteLine(prompt);
-                Console.Write(": "); 
+                // Console.Write(": "); 
                 string userInput = Console.ReadLine(); 
                
-                Entry entry = new Entry();
-                entry._date = dateText;
-                entry._prompt = prompt;
-                entry._input = userInput;
-                
-                Journal journal = new Journal();
+                Entry entry = new Entry(dateText, prompt, userInput);
+                             
                 journal._entry.Add(entry);
 
-                journal.Display();
-                userJournal.Add($"{journal}");
+                userJournal.Add($"{entry.formatEntry()}");
+                // journal.Display();
 
 
             }
 
             else if (userDecision == 2)
             {
+                // Console.WriteLine($"{userJournal}");
+                // int testnumber = userJournal.Count();
+                // Console.WriteLine($"{testnumber}");
                 //Call list of journal, display all in order
-                foreach (string journal in userJournal)
+                foreach (Entry line in journal._entry)
                 
                 {
-                    Console.WriteLine($"{journal}");
+                    line.Display();
                 }
 
                 
@@ -69,8 +69,11 @@ class Program
                 
                 using (StreamWriter outputFile = new StreamWriter(completeFileName))
                 {
-                    
-                    outputFile.WriteLine($"{userJournal} ~~");
+                    foreach (string line in userJournal){
+                        
+                        outputFile.WriteLine($"{line} ~~");
+
+                    }
                     
                 }
                 //return completeFileName;
@@ -88,7 +91,8 @@ class Program
                 {
                     string[] parts = line.Split("~~");
                     
-                    Console.WriteLine($"{parts}");
+                    journal._entry.Add(new Entry(parts[0], parts[1], parts[2]));
+                    
                     
                     //for (int i =0; i < line.Count; i++)
                     //{
@@ -105,6 +109,7 @@ class Program
 
             else
             {
+                //overflow error, if values are incorrect. 
                 Console.WriteLine("Sorry that wasn't one of the prompts, Please try again");
             }
         

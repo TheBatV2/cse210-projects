@@ -11,6 +11,20 @@ public class Entry
     Console.WriteLine($"{_date}, {_prompt}:\n {_input}");
     
   }
+
+  public string formatEntry()
+  {
+    return ($"{_date} ~~ {_prompt}: ~~ {_input}");
+  }
+
+  public Entry(string date, string prompt, string userInput)
+  {
+    _date = date;
+    _prompt = prompt;
+    _input = userInput;
+  }
+  
+
   
 
 }
