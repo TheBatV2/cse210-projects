@@ -14,8 +14,8 @@ class Word
     {
 
         int digit = _randomWord.Count();
-        string underscore = "_____";
-        _randomWord = _randomWord.Replace($"{_randomWord}", $"{underscore}");
+        string underscore = "_";
+        _randomWord = _randomWord.Replace($"{_randomWord}", $"{underscore[digit]}");
         return _randomWord;
     }
 

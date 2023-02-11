@@ -28,14 +28,20 @@ class DisplayScripture
         int r1 = getMemorizer();
         int r2 = getMemorizer();
         int r3 = getMemorizer();
-        Console.WriteLine($"{blankedScripture[r1]}");
-        // Word word1 = new Word(r1);
-        // Word word2 = new Word(r2);
-        // Word word3 = new Word(r3);
-        // string randomWordBlank = word.getUnderscore();
-        // blankedScripture[blankedScripture.IndexOf(randomWord)].Replace($"{randomWord}",$"{randomWordBlank}");
-        // string finalScripture = string.Join("", blankedScripture);
-        // Console.WriteLine($"{referance1}: {finalScripture}");
+        string word1 = blankedScripture[r1];
+        string word2 = blankedScripture[r2];
+        string word3 = blankedScripture[r3];
+        Word word1Blank = new Word(word1);
+        Word word2Blank = new Word(word2);
+        Word word3Blank = new Word(word3);
+        string randomWordBlank1 = word1Blank.getUnderscore();
+        string randomWordBlank2 = word2Blank.getUnderscore();
+        string randomWordBlank3 = word3Blank.getUnderscore();
+        blankedScripture[r1].Replace($"{blankedScripture[r1]}",$"{randomWordBlank1}");
+        blankedScripture[r2].Replace($"{blankedScripture[r2]}",$"{randomWordBlank2}");
+        blankedScripture[r3].Replace($"{blankedScripture[r3]}",$"{randomWordBlank3}");
+        string finalScripture = string.Join("", blankedScripture);
+        Console.WriteLine($"{referance1}: {finalScripture}");
         
 
     }
