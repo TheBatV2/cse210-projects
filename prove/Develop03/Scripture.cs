@@ -11,7 +11,7 @@ class Scripture
 
     public string getScripture()
     {
-       string variScripture = $"{scripture}"; 
+       string variScripture = string.Join("", scripture); 
        return variScripture;
     }
 
@@ -21,10 +21,14 @@ class Scripture
         return refer;
     }
 
-    // public string getMemorizer()
+    // public void getFirstScripture()
     // {
-    //     Random randomNumber = new Random();
-    //     int random = randomNumber.Next(0, scripture.Count); 
-    //     return scripture[random];
+       
+    
+    //    for(int i=0; i<scripture.Count; i++)
+    //    {
+    //     Console.WriteLine(scripture[i]);
+    //    }
+    
     // }
 }
