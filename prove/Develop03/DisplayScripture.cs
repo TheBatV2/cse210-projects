@@ -10,10 +10,10 @@ class DisplayScripture
     public DisplayScripture(string originalScripture)
     {
         _scripture = originalScripture;
-        List<string> convertvar = new List<string>(_scripture.Split(""));
-        foreach(string i in convertvar)
+        List<string> convertvar = _scripture.Split("").ToList();
+        for (int i = 0; i <convertvar.Count(); i++)
         {
-            blankedScripture.Add(i);
+            blankedScripture.Add(convertvar[i]);
             //Console.WriteLine(i);
         }
 
