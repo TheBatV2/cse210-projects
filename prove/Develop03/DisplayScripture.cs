@@ -22,7 +22,8 @@ class DisplayScripture
         Word word = new Word(randomWord);
         string randomWordBlank = word.getUnderscore();
         blankedScripture[blankedScripture.IndexOf(randomWord)].Replace($"{randomWord}",$"{randomWordBlank}");
-        Console.WriteLine($"{referance1}: {blankedScripture}");
+        string finalScripture = string.Join("", blankedScripture);
+        Console.WriteLine($"{referance1}: {finalScripture}");
         
 
     }
