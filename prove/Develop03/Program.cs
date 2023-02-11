@@ -2,28 +2,24 @@ using System;
 
 class Program
 {
-    private string userInput = "hello";
     static void Main(string[] args)
+
+    
     {
-        // while(userInput != "quit")
+        Scripture original = new Scripture();
+        //sets userinput for errors
+        string userInput = "";
+        //displays original scripture
+        string referance = original.getReferance();
+        string originalScripture = original.getScripture();
+        Console.WriteLine($"{referance}: {originalScripture}");
+        while(userInput != "quit")
         {
-        Display scripture1 = new Display();
-        Console.WriteLine(scripture1.displayScripture());
+        userInput = Console.ReadLine();
+        DisplayScripture scripture = new DisplayScripture();
+        Console.WriteLine(original.getScripture());
         
 
-        Display scripture2 = new Display();
-        Console.WriteLine(scripture2.displayScripture());
-        
-
-        Display scripture3 = new Display();
-        Console.WriteLine(scripture3.displayScripture());
-        
-
-        Display scripture4 = new Display();
-        Console.WriteLine(scripture4.displayScripture());
-        
-        Display scripture5 = new Display();
-        Console.WriteLine(scripture5.displayScripture());
         }
     }
 }
