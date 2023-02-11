@@ -10,7 +10,11 @@ class DisplayScripture
     public DisplayScripture(string originalScripture)
     {
         _scripture = originalScripture;
-        blankedScripture.Add(_scripture);
+        List<string> convertvar = new List<string>(_scripture.Split(""));
+        foreach(string i in convertvar)
+        {
+            blankedScripture.Add(i);
+        }
 
     }
 
