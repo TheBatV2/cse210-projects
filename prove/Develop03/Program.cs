@@ -16,10 +16,11 @@ class Program
         //displays original scripture
         string referance = original.getReferance();
         string originalScripture = original.getScripture();
+        string firstScripture = string.Join("", originalScripture);
         
-        Console.WriteLine($"{referance}: {originalScripture}");
+        Console.WriteLine($"{referance}: {firstScripture}");
 
-        //sets a while loop to quit if quit is typed
+        //sets a while loop to quit if "quit" is typed
 
 
         while(userInput != "quit")
