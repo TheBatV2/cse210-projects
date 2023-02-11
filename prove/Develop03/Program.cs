@@ -9,10 +9,13 @@ class Program
         Scripture original = new Scripture();
         //sets userinput for errors
         string userInput = "";
+        
         //displays original scripture
         string referance = original.getReferance();
         string originalScripture = original.getScripture();
         Console.WriteLine($"{referance}: {originalScripture}");
+
+
         while(userInput != "quit")
         {
         userInput = Console.ReadLine();
