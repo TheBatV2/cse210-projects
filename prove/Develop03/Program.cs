@@ -15,15 +15,17 @@ class Program
         string originalScripture = original.getScripture();
         Console.WriteLine($"{referance}: {originalScripture}");
 
+        //sets a while loop to quit if quit is typed
 
-        while(userInput != "quit")
-        {
-        userInput = Console.ReadLine();
-        DisplayScripture scripture = new DisplayScripture();
-        Console.WriteLine(original.getScripture());
+
+        // while(userInput != "quit")
+        // {
+        // userInput = Console.ReadLine();
+        // DisplayScripture scripture = new DisplayScripture();
+        // Console.WriteLine(original.getScripture());
         
 
-        }
+        // }
     }
 }
 // And by the power of the holy ghost ye may know the truth of all things  Moroni 10:5  5 instances
