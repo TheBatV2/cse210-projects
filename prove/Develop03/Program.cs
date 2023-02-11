@@ -36,7 +36,7 @@ class Program
 
         static void DisplayWelcomeMessage()
         {
-            Console.WriteLine("Welcome to the Scripture Memorizer, press Enter when you would like words to dissapear. \nType Quit when done.");
+            Console.WriteLine("/nWelcome to the Scripture Memorizer, press Enter when you would like words to dissapear. \nType Quit when done.");
         }
     }
 }
