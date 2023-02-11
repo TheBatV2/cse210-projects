@@ -20,4 +20,11 @@ class Scripture
         string refer = referance;
         return refer;
     }
+
+    // public string getMemorizer()
+    // {
+    //     Random randomNumber = new Random();
+    //     int random = randomNumber.Next(0, scripture.Count); 
+    //     return scripture[random];
+    // }
 }
