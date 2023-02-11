@@ -34,9 +34,9 @@ class DisplayScripture
         Word word1Blank = new Word(word1);
         Word word2Blank = new Word(word2);
         Word word3Blank = new Word(word3);
-        string randomWordBlank1 = word1Blank.getUnderscore();
-        string randomWordBlank2 = word2Blank.getUnderscore();
-        string randomWordBlank3 = word3Blank.getUnderscore();
+        string randomWordBlank1 = word1Blank.getUnderscore(word1);
+        string randomWordBlank2 = word2Blank.getUnderscore(word2);
+        string randomWordBlank3 = word3Blank.getUnderscore(word3);
         blankedScripture[r1].Replace($"{blankedScripture[r1]}",$"{randomWordBlank1}");
         blankedScripture[r2].Replace($"{blankedScripture[r2]}",$"{randomWordBlank2}");
         blankedScripture[r3].Replace($"{blankedScripture[r3]}",$"{randomWordBlank3}");

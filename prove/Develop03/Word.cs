@@ -10,10 +10,10 @@ class Word
         _randomWord = randomWord;
     }
 
-    public string getUnderscore()
+    public string getUnderscore(string word)
     {
 
-        int digit = _randomWord.Count();
+        int digit = word.Count();
         string underscore = "_";
         _randomWord = _randomWord.Replace($"{_randomWord}", $"{underscore[digit]}");
         return _randomWord;
