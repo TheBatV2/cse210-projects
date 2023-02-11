@@ -14,6 +14,7 @@ class DisplayScripture
         foreach(string i in convertvar)
         {
             blankedScripture.Add(i);
+            Console.WriteLine(i);
         }
 
     }
