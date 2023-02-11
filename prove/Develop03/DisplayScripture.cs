@@ -22,24 +22,32 @@ class DisplayScripture
     public void Display()
     {
         Scripture referance = new Scripture();
+        // calls referance for display
         string referance1 = referance.getReferance();
-        string randomWord = getMemorizer();
-        Word word = new Word(randomWord);
-        string randomWordBlank = word.getUnderscore();
-        blankedScripture[blankedScripture.IndexOf(randomWord)].Replace($"{randomWord}",$"{randomWordBlank}");
-        string finalScripture = string.Join("", blankedScripture);
-        Console.WriteLine($"{referance1}: {finalScripture}");
+        //gets random number to replace word with Blanks
+        int r1 = getMemorizer();
+        int r2 = getMemorizer();
+        int r3 = getMemorizer();
+        Console.WriteLine($"{blankedScripture[r1]}");
+        // Word word1 = new Word(r1);
+        // Word word2 = new Word(r2);
+        // Word word3 = new Word(r3);
+        // string randomWordBlank = word.getUnderscore();
+        // blankedScripture[blankedScripture.IndexOf(randomWord)].Replace($"{randomWord}",$"{randomWordBlank}");
+        // string finalScripture = string.Join("", blankedScripture);
+        // Console.WriteLine($"{referance1}: {finalScripture}");
         
 
     }
 
     
-    private string getMemorizer()
+    private int getMemorizer()
     {
         Random randomNumber = new Random();
         int random = randomNumber.Next(0, blankedScripture.Count);
-        Console.WriteLine($"{blankedScripture[random]}");
-        return blankedScripture[random];
+        //Console.WriteLine($"{blankedScripture[random]}");
+        //return blankedScripture[random];
+        return random;
     }
  
     
