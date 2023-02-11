@@ -37,7 +37,8 @@ class DisplayScripture
     private string getMemorizer()
     {
         Random randomNumber = new Random();
-        int random = randomNumber.Next(0, blankedScripture.Count); 
+        int random = randomNumber.Next(0, blankedScripture.Count);
+        Console.WriteLine($"{blankedScripture[random]}");
         return blankedScripture[random];
     }
  
