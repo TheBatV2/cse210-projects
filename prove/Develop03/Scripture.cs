@@ -11,7 +11,7 @@ class Scripture
 
     public string getScripture()
     {
-       string variScripture = $"{scripture}";
+       string variScripture = string.Join("", scripture);
        return variScripture;
     }
 

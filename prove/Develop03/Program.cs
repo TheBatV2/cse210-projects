@@ -16,9 +16,9 @@ class Program
         //displays original scripture
         string referance = original.getReferance();
         string originalScripture = original.getScripture();
-        string firstScripture = string.Join("", originalScripture);
         
-        Console.WriteLine($"{referance}: {firstScripture}");
+        
+        Console.WriteLine($"{referance}: {originalScripture}");
 
         //sets a while loop to quit if "quit" is typed
 
