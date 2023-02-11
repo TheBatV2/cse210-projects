@@ -13,7 +13,7 @@ class DisplayScripture
         List<string> convertvar = _scripture.Split("").ToList();
         for (int i = 0; i <convertvar.Count(); i++)
         {
-            blankedScripture.Add(convertvar[i]);
+            blankedScripture = convertvar;
             //Console.WriteLine(i);
         }
 
