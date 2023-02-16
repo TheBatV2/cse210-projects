@@ -13,5 +13,6 @@ class Program
 
         Writing s3 = new Writing("Thomas S Kidd", "American History", "American History, 1492 - Present");  
         Console.WriteLine(s3.GetStudent());  
+        Console.WriteLine(s3.GetBook());
     }
 }
