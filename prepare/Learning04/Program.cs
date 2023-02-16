@@ -12,7 +12,7 @@ class Program
         Console.WriteLine(s2.GetStudentFull());
         Console.WriteLine(s2.GetMath());
 
-        Writing s3 = new Writing("Thomas S Kidd", "American History", "American History, 1492 - Present");  
+        Writing s3 = new Writing("Thomas S Kidd", "American History", "American History, 1492 - Present.");  
         Console.WriteLine(s3.GetStudentFull());  
         Console.WriteLine(s3.GetBook());
     }
