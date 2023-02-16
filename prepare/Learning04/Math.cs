@@ -8,4 +8,9 @@ public class Math : Student
         _section = section;
         _problems = problems;
     }
+
+    public string GetMath()
+    {
+        return "Section" + _section + "Problems" + _problems;
+    }
 }
