@@ -4,6 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Learning04 World!");
+        Student s1 = new Student("Spencer Barbre", "Addition");
+        Console.WriteLine(s1.GetStudent());
     }
 }

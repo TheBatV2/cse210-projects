@@ -1,0 +1,6 @@
+using System;
+
+class Writing
+{
+    
+}
