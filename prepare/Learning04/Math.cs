@@ -11,6 +11,6 @@ public class Math : Student
 
     public string GetMath()
     {
-        return "Section" + _section + "Problems" + _problems;
+        return $"Section: {_section} Problems: {_problems}";
     }
 }
