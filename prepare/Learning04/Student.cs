@@ -12,9 +12,14 @@ public class Student
         _topic = topic;
     }
     
-    public string GetStudent()
+    public string GetStudentFull()
     {
         return $"{_studentName} - {_topic}";
+    }
+
+    public string GetStudent()
+    {
+        return $"{_studentName}";
     }
 
 
