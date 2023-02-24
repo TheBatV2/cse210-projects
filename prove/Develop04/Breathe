@@ -1,0 +1,9 @@
+
+
+public class Breathe : IntroOutro
+{
+public Breathe(string intro, string discription, int time):base(intro, discription, time)
+{
+
+}
+}

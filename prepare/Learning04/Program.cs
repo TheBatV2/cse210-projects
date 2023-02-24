@@ -4,7 +4,15 @@ class Program
 {
     static void Main(string[] args)
     {
-        Student s1 = new Student("Spencer Barbre", "Addition");
+       
+       // welcomeMessage()
+       // readline
+       //if user input != quit 
+       // menu/
+        //
+       
+       
+       Student s1 = new Student("Spencer Barbre", "Addition");
         Console.WriteLine(s1.GetStudentFull());
 
 
