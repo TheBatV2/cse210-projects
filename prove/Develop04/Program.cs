@@ -47,7 +47,7 @@ class Program
         string Menu()
         {
             Console.WriteLine("Welcome to your Relaxation program, \nWhat would you like to do?\n(Please enter the number of your selection)\n\n1. Breathing Excercise.\n2.Reflection Exercise.\n3. Recording Exsercise.\n4. Quit.");
-            
+            string _menu = Console.ReadLine();
             return _menu;
         }
 
