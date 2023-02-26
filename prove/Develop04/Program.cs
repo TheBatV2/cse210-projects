@@ -5,11 +5,13 @@ class Program
     static void Main(string[] args)
     {
                
-        int userInput = 0;
+        
         string userChoice = "";
         Menu();
-        
-               
+        Console.WriteLine("How long (in seconds) would you like to do the activity for?");
+        string userStrInput = Console.ReadLine();
+        int userInput = Convert.ToInt32(userStrInput);       
+        userInput = userInput * 1000;
         
         if (userChoice == "1")
         {

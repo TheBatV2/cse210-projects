@@ -10,8 +10,8 @@ public class IntroOutro
     {
         _intro = intro;
         _discription = discription;
-        _usernumber = Convert.ToInt32(usernumber);
-        _usernumber = _usernumber * 1000;
+        
+        _usernumber = usernumber;
     }
 
     public string getIntro()
