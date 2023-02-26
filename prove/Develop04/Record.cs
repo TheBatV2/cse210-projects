@@ -15,8 +15,8 @@ public class Record : IntroOutro
 
     Thread.Sleep(3000);
 
-    DateTime currentTime = DateTime.Now;
-    while (currentTime < futureTime)
+    
+    while (DateTime.Now < futureTime)
     {
         getPrompt();
         string userAnswer = Console.ReadLine();

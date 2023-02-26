@@ -16,8 +16,8 @@ public class Reflect : IntroOutro
         DateTime futureTime = startTime.AddSeconds(_time);
 
 
-        DateTime currentTime = DateTime.Now;
-        while (currentTime < futureTime)
+       
+        while (DateTime.Now < futureTime)
         {
             Console.Write("-"); 
             Thread.Sleep(300);

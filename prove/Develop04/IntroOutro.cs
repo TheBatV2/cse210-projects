@@ -21,7 +21,7 @@ public class IntroOutro
 
     public string getOutro()
     {
-        string _outro = "Thank you for participating in this activity.  Enjoy your day.";
+        string _outro = "\nThank you for participating in this activity.  Enjoy your day.";
         return _outro;
     }
 
