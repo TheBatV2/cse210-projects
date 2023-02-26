@@ -5,23 +5,23 @@ public class Breathe : IntroOutro
     private int _time;
     public Breathe(string intro, string discription, int time):base(intro, discription, time)
     {
-        _time = time * 1000;
+        _time = time;
     }
 
     public void breatheAct()
     {
-    DateTime startTime = DateTime.Now;
-        DateTime futureTime = startTime.AddSeconds(_time);
+        DateTime startTime = DateTime.Now;
+        DateTime futureTime = startTime.AddSeconds(10);
 
         Thread.Sleep(3000);
 
-        DateTime currentTime = DateTime.Now;
-        if (currentTime < futureTime)
+        
+        while (DateTime.Now < futureTime)
         {
             
             getBreathin();
             getBreathOut();
-                       
+                      
             
         }
     }        
