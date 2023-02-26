@@ -1,5 +1,11 @@
 public class IntroOutro
 {
+
+    private string _intro;
+
+    private string _discription;
+
+    private int _usernumber;
     public IntroOutro(string intro, string outro, int usernumber)
     {
         
