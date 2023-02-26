@@ -15,10 +15,11 @@ public class Record : IntroOutro
 
     Thread.Sleep(3000);
 
+    string prompt = getPrompt();
+    Console.WriteLine(prompt);
     
     while (DateTime.Now < futureTime)
     {
-        getPrompt();
         string userAnswer = Console.ReadLine();
         r.Add(userAnswer);
     }
