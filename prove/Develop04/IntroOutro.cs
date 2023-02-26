@@ -16,7 +16,7 @@ public class IntroOutro
 
     public string getIntro()
     {
-        return $"{_intro} /n{_discription}";
+        return $"{_intro} \n{_discription}";
     }
 
     public string getOutro()
