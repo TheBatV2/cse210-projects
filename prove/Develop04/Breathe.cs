@@ -46,11 +46,12 @@ public class Breathe : IntroOutro
             Console.Write("1"); // Replace it with the - character
             Thread.Sleep(1000);
             // Console.Write("\b \b"); // Erase the + character
-}
-
-
-
         }
+
+
+
+
+        
 
         private void getBreathOut()
         {
