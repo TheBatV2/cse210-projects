@@ -27,7 +27,7 @@ public class Breathe : IntroOutro
     }        
         private void getBreathin()
         {
-            Console.Write("Breath in... 5");
+            Console.Write("\nBreath in... 5");
             Thread.Sleep(1000);
 
             Console.Write("\b \b"); // Erase the + character
@@ -55,7 +55,7 @@ public class Breathe : IntroOutro
 
         private void getBreathOut()
         {
-            Console.Write("Breath out ... 5");
+            Console.Write("\nBreath out ... 5");
             
             Thread.Sleep(1000);
 
