@@ -11,7 +11,7 @@ public class Breathe : IntroOutro
     public void breatheAct()
     {
         DateTime startTime = DateTime.Now;
-        DateTime futureTime = startTime.AddSeconds(10);
+        DateTime futureTime = startTime.AddSeconds(_time);
 
         Thread.Sleep(3000);
 
