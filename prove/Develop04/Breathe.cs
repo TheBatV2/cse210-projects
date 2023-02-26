@@ -27,12 +27,26 @@ public class Breathe : IntroOutro
     }        
         private void getBreathin()
         {
-            Console.Write("Breath in ...");
-            for(int i = 5; i != 0; i--)
-          
-            Console.Write($"{i}");
+            Console.Write("Breath in... 5");
             Thread.Sleep(1000);
-            Console.Write("\b \b"); 
+
+            Console.Write("\b \b"); // Erase the + character
+            
+            Console.Write("4"); // Replace it with the - character
+            Thread.Sleep(1000);
+            Console.Write("\b \b"); // Erase the + character
+            
+            Console.Write("3"); // Replace it with the - character
+            Thread.Sleep(1000);
+            Console.Write("\b \b"); // Erase the + character
+            
+            Console.Write("2"); // Replace it with the - character
+            Thread.Sleep(1000);
+            Console.Write("\b \b"); // Erase the + character
+            Console.Write("1"); // Replace it with the - character
+            Thread.Sleep(1000);
+            // Console.Write("\b \b"); // Erase the + character
+}
 
 
 
