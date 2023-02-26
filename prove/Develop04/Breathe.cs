@@ -16,7 +16,7 @@ public class Breathe : IntroOutro
         Thread.Sleep(3000);
 
         DateTime currentTime = DateTime.Now;
-        while (currentTime < futureTime)
+        if (currentTime < futureTime)
         {
             
             getBreathin();
