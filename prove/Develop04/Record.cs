@@ -8,7 +8,7 @@ public class Record : IntroOutro
         _time = time;
     }
     List<string> r = new List<string>();
-    public string recordAct()
+    public void recordAct()
     {
     DateTime startTime = DateTime.Now;
     DateTime futureTime = startTime.AddSeconds(_time);
@@ -23,7 +23,7 @@ public class Record : IntroOutro
         r.Add(userAnswer);
     }
     int volume = r.Count();
-    return $"Congradulations you wrote {volume} items";
+    Console.WriteLine($"Congradulations you wrote {volume} items");
 
     }
 
@@ -33,8 +33,8 @@ public class Record : IntroOutro
         "Describe a place where you felt happiest.",
         "What was your greatest fear, and how did you conquer it?",
         "Write a letter to someone that you always want to thank but have never had the chance to do so.",
-        "What is something that you would like to change about yourself? How can you change it?",
-    }
+        "What is something that you would like to change about yourself? How can you change it?"
+    };
     public string getPrompt()
     {
         Random randomGenerator = new Random();
