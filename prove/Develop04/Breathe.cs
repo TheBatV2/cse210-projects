@@ -2,17 +2,21 @@
 
 public class Breathe : IntroOutro
 {
+private int _time;
 public Breathe(string intro, string discription, int time):base(intro, discription, time)
 {
 
 
-//  DateTime startTime = DateTime.Now;
-//         DateTime futureTime = startTime.AddSeconds(10000 - 5000);
+ DateTime startTime = DateTime.Now;
+        DateTime futureTime = startTime.AddSeconds(time);
 
-//         Thread.Sleep(3000);
+        Thread.Sleep(3000);
 
-//         DateTime currentTime = DateTime.Now;
-//         if (currentTime < futureTime)
+        DateTime currentTime = DateTime.Now;
+        if (currentTime < futureTime)
+        {
+
+        }
 //         {
             
 //             for(int i = dividedNumber/2; i != 0; i--);

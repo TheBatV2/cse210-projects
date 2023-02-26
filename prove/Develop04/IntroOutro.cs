@@ -6,10 +6,26 @@ public class IntroOutro
     private string _discription;
 
     private int _usernumber;
-    public IntroOutro(string intro, string outro, int usernumber)
+    public IntroOutro(string intro, string discription, int usernumber)
     {
-        
+        _intro = intro;
+        _discription = discription;
+        _usernumber = Convert.ToInt32(usernumber);
+        _usernumber = _usernumber * 1000;
     }
+
+    public string getIntro()
+    {
+        return $"{_intro} /n{_discription}";
+    }
+
+    public string getOutro()
+    {
+        string _outro = "Thank you for participating in this activity.  Enjoy your day.";
+        return _outro;
+    }
+
+    
 }
 
 //  DateTime startTime = DateTime.Now;
