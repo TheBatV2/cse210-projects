@@ -11,7 +11,9 @@ public class Reflect : IntroOutro
     public void reflectAct()
     {  
         Thread.Sleep(3000);
-        getPrimaryPrompt();
+        string primary = getPrimaryPrompt();
+        string secondary = getSecondaryPrompt();
+        Console.WriteLine(primary);
         DateTime startTime = DateTime.Now;
         DateTime futureTime = startTime.AddSeconds(_time);
 
@@ -20,18 +22,18 @@ public class Reflect : IntroOutro
         while (DateTime.Now < futureTime)
         {
             Console.Write("-"); 
-            Thread.Sleep(300);
+            Thread.Sleep(500);
             Console.Write("\b \b"); 
             Console.Write("\\"); 
-            Thread.Sleep(300);
+            Thread.Sleep(500);
             Console.Write("\b \b"); 
             Console.Write("|"); 
-            Thread.Sleep(300);
+            Thread.Sleep(500);
             Console.Write("\b \b"); 
             Console.Write("/"); 
-            Thread.Sleep(300);
+            Thread.Sleep(500);
             Console.Write("\b \b"); 
-            getSecondaryPrompt();
+            Console.WriteLine(secondary);
         }
     }
 
