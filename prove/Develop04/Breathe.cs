@@ -11,12 +11,12 @@ public class Breathe : IntroOutro
     public void breatheAct()
     {
     DateTime startTime = DateTime.Now;
-        DateTime futureTime = startTime.AddSeconds(_time);
+        DateTime futureTime = startTime.AddSeconds(10000);
 
         Thread.Sleep(3000);
 
         DateTime currentTime = DateTime.Now;
-        while (currentTime != futureTime)
+        while (currentTime < futureTime)
         {
             
             getBreathin();
