@@ -27,9 +27,10 @@ public class Breathe : IntroOutro
     }        
         private void getBreathin()
         {
+            Console.Write("Breath in ...");
             for(int i = 5; i != 0; i--)
           
-            Console.Write($"Breath in... {i}");
+            Console.Write($"{i}");
             Thread.Sleep(1000);
             Console.Write("\b \b"); 
 
@@ -39,8 +40,9 @@ public class Breathe : IntroOutro
 
         private void getBreathOut()
         {
+            Console.Write("Breath out ...");
             for(int i = 5; i != 0; i--)
-            Console.Write($"Breath out... {i}");
+            Console.Write($"{i}");
             Thread.Sleep(1000);
             Console.Write("\b \b"); 
         }   
