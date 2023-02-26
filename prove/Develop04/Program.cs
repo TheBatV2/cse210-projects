@@ -11,7 +11,7 @@ class Program
         Console.WriteLine("How long (in seconds) would you like to do the activity for?");
         string userStrInput = Console.ReadLine();
         int userInput = Convert.ToInt32(userStrInput);       
-        userInput = userInput * 1000;
+        
         
         if (userChoice == "1")
         {

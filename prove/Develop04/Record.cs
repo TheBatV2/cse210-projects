@@ -5,7 +5,7 @@ public class Record : IntroOutro
     private int _time;
     public Record(string intro, string discription, int time):base(intro, discription, time)
     {
-        _time = time;
+        _time = time * 1000;
     }
     List<string> r = new List<string>();
     public void recordAct()

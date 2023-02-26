@@ -5,7 +5,7 @@ public class Breathe : IntroOutro
     private int _time;
     public Breathe(string intro, string discription, int time):base(intro, discription, time)
     {
-        _time = time;
+        _time = time * 1000;
     }
 
     public void breatheAct()
@@ -16,7 +16,7 @@ public class Breathe : IntroOutro
         Thread.Sleep(3000);
 
         DateTime currentTime = DateTime.Now;
-        if (currentTime < futureTime)
+        while (currentTime != futureTime)
         {
             
             getBreathin();
