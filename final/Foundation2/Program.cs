@@ -26,11 +26,11 @@ class Program
         Address address2 = new Address("85 Johnson St", "Blackfoot", "ID", "USA");
         Customer customer2 = new Customer("Rudy Sanchez", address2);
 
-        order1.AddToCart(product3);
-        order1.AddToCart(product4);
-        order1.displayTotalCost(address2);
-        order1.packingLabel();
-        order1.shippingLabel(address2, customer2);
+        order2.AddToCart(product3);
+        order2.AddToCart(product4);
+        order2.displayTotalCost(address2);
+        order2.packingLabel();
+        order2.shippingLabel(address2, customer2);
 
 
 
@@ -38,12 +38,12 @@ class Program
         Address address3 = new Address("204 Johnson rd", "Blackfoot", "ID", "USA");
         Customer customer3 = new Customer("JoAnn Barbre", address3);
 
-        order1.AddToCart(product1);
-        order1.AddToCart(product1);
-        order1.AddToCart(product4);
-        order1.displayTotalCost(address3);
-        order1.packingLabel();
-        order1.shippingLabel(address3, customer3);
+        order3.AddToCart(product1);
+        order3.AddToCart(product1);
+        order3.AddToCart(product4);
+        order3.displayTotalCost(address3);
+        order3.packingLabel();
+        order3.shippingLabel(address3, customer3);
         
 
         
