@@ -20,6 +20,7 @@ class Program
         order1.packingLabel();
         order1.shippingLabel(address1, customer1);
 
+        Console.WriteLine("");
 
 
         Order order2 = new Order();
@@ -32,7 +33,7 @@ class Program
         order2.packingLabel();
         order2.shippingLabel(address2, customer2);
 
-
+        Console.WriteLine("");
 
         Order order3 = new Order();
         Address address3 = new Address("204 Johnson rd", "Blackfoot", "ID", "USA");
