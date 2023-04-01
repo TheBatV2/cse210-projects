@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args)
     {
        
-        LectureEvent LE = new LectureEvent("Lecture", "Meet Elder Holland", "Personal Fireside with Elder Holland", "4th April", "7pm", "Blackfoot South Stake Center Building","Elder Holland", "300");
+        LectureEvent LE = new LectureEvent("Lecture", "Meet Elder Holland", "Personal Fireside with Elder Holland", "4th of April", "7pm", "Blackfoot South Stake Center Building","Elder Holland", "300");
         Console.WriteLine(LE.GetStandard());
         Console.WriteLine(LE.GetFullLecture());
         Console.WriteLine(LE.GetShort());
